@@ -1,6 +1,6 @@
 const data = [
   {
-    url: "",
+    url: "https://unsplash.com/photos/j-8ZmtO-8DQ",
     name: "Woo Ninja",
     color: "Pink",
     Stock: true,
@@ -9,7 +9,7 @@ const data = [
     size: "L",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/lEUAwTHGmzY",
     name: "Woo Logo",
     color: "Blue",
     Stock: true,
@@ -18,16 +18,16 @@ const data = [
     size: "XL",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/lEUAwTHGmzY",
     name: "Patient Ninja",
-    color: "Pink",
+    color: "Black",
     Stock: true,
     price: 35.0,
     type: "hoodie",
     size: "M",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/ZXVeKAKtwvY",
     name: "Pro Ninja",
     color: "Black",
     Stock: true,
@@ -36,7 +36,7 @@ const data = [
     size: "L",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/9fbYYM677_A",
     name: "Illusion Tshirt ",
     color: "Red",
     Stock: true,
@@ -45,7 +45,7 @@ const data = [
     size: "XL",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/lrAmF1IPGSI",
     name: "Logo Tshirt",
     color: "Blue",
     Stock: true,
@@ -54,7 +54,7 @@ const data = [
     size: "XL",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/20oegq2JDYU",
     name: "Slim Fit Shirt",
     color: "White",
     Stock: true,
@@ -63,7 +63,7 @@ const data = [
     size: "L",
   },
   {
-    url: "",
+    url: "https://unsplash.com/photos/af91UeNTbzQ",
     name: "Slim Fit Shirt",
     color: "Black",
     Stock: true,
