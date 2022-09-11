@@ -6,6 +6,7 @@ const Home = () => {
     <div>
       <h1 className="bg-red-500">Heading</h1>
       <Link to="/cart">Cart</Link>
+      <Link to="/ThankYou">thank you</Link>
     </div>
   );
 };
