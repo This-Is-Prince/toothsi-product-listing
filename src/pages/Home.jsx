@@ -20,19 +20,29 @@ const Home = () => {
           <label className="px-2">Price</label>
           <label className="col-span-3 text-right px-6">Buy</label>
         </header>
-        {state?.products?.map((item, index) => {
-          const { url, name, color, Stock, price, size, type } = item;
+        {state?.products?.map((item) => {
+          const { url, name, color, stock, price, size, type, id } = item;
+          if (state.uniqueType !== "Select Type") {
+            if (state.uniqueType !== type) {
+              return <React.Fragment key={id}></React.Fragment>;
+            }
+          }
+          if (state.uniqueSize !== "Select Size") {
+            if (state.uniqueSize !== size) {
+              return <React.Fragment key={id}></React.Fragment>;
+            }
+          }
           return (
-            <div key={index} className="grid grid-cols-9 w-5/6 border-b-2 py-1">
+            <div key={id} className="grid grid-cols-9 w-5/6 border-b-2 py-1">
               <div>
                 <img className="rounded-md" src={url} alt="image" />
               </div>
               <label className="col-span-2 px-2">{name}</label>
               <label className="px-2">{color}</label>
               <label
-                className={Stock ? "px-2 text-green-600" : "px-2 text-red-600"}
+                className={stock ? "px-2 text-green-600" : "px-2 text-red-600"}
               >
-                {Stock ? "In-stock" : "out-stock"}
+                {stock ? "In-stock" : "out-stock"}
               </label>
               <label className="px-2">${price}</label>
               <div className="col-span-3 h-8 text-right px-6 flex  justify-end gap-6">

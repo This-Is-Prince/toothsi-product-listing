@@ -1,7 +1,13 @@
 import React, { useReducer, useContext } from "react";
 import reducer from "./reducer";
 const AppContext = React.createContext();
-const initialData = {};
+
+const initialData = {
+  products: [],
+  uniqueType: "",
+  uniqueSize: ""
+};
+
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialData);
 
